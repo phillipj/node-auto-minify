@@ -1,0 +1,16 @@
+{
+  "author": "Phillip Johnsen <johphi@gmail.com>",
+  "name": "node-auto-minify",
+  "description": "Wrapper around the node-minify module which automatically re-minifies files when changed",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/phillipj/node-auto-minify.git"
+  },
+  "dependencies": {
+    "node-minify": "0.4.x"
+  },
+  "engines": {
+    "node": ">=0.6"
+  }
+}
