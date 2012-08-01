@@ -19,7 +19,7 @@ function AutoMinify(options) {
 	}
 
 	filesToMinify.forEach(function(fileToWatch) {
-		fs.watch(fileToWatch, function(event, filename) {
+		fs.watchFile(fileToWatch, function(event, filename) {
 			minifier.compress();
 		});
 	});
