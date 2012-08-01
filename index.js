@@ -25,7 +25,7 @@ function AutoMinify(options) {
 	});
 
 	function minificationDone(err) {
-		self.emit('minified', options.fileOut);
+		self.emit('minified', err, options);
 
 		// invoke callback given in options when creating auto minifier
 		if (typeof originalCallback !== 'undefined') {
